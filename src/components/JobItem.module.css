@@ -1,0 +1,110 @@
+/* src/components/JobItem.module.css */
+.jobItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  margin: 15px 0;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.jobDetails {
+  font-size: 16px;
+  color: #333;
+}
+
+.company {
+  font-weight: 600;
+  color: #007bff;
+}
+
+.title {
+  font-style: italic;
+  color: #555;
+}
+
+.status {
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+
+  &.applied { background-color: #e6f2ff; color: #007bff; }
+  &.interview { background-color: #fff2cc; color: #ff9900; }
+  &.rejected { background-color: #ffe6e6; color: #ff3333; }
+  &.offer { background-color: #e6fff2; color: #00cc66; }
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.editButton {
+  background-color: #f0f0f0;
+  color: #333;
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+.deleteButton {
+  background-color: #fff0f0;
+  color: #ff4d4d;
+
+  &:hover {
+    background-color: #ff4d4d;
+    color: white;
+  }
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.editInput,
+.editSelect {
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.saveButton {
+  background-color: #00cc66;
+  color: white;
+
+  &:hover {
+    background-color: #00b359;
+  }
+}
+
+.cancelButton {
+  background-color: #f0f0f0;
+  color: #333;
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
